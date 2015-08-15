@@ -1,20 +1,40 @@
+var largest = 0;
+var num = [];
 function largestOfFour(arr) {
-  var num = [];
-  var longest = 0;
   for (i=0; i<arr.length; i++){
-    var subArray = arr[i];
-      for(j=0; j<subArray.length; j++){
-        if(longest < subArray[j]) {
-        longest = subArray[j];
+  var subArray = arr[i];
+  for (j = 0; j < subArray.length; j++){
+      if(largest < subArray[j]) {
+        largest = subArray[j];
+      }
     }
-        num.push(longest);
-    
+  num.push(largest);
   }
   return num;
 }
 
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 
+//Yields [5,27,39,1001], but FCC shows this code to be incorrect.
+
+//Using Math Object
+/*var largest = 0;
+var num = [];
+function largestOfFour(arr) {
+  for (i=0; i<arr.length; i++){
+  var subArray = arr[i];
+  var largest = Math.max(subArray[i]);
+  num.push(largest);
+  }
+  return num;
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+
+
+
+
+//Correct answer using Javascript's math object
 /*
 function largestOfFour(arr) {
   var num = [];
