@@ -89,10 +89,8 @@ end('Bastian', 'n');
 /*
 function end(str, target) {
   var firstString = str.substr(-target.length);
-
     return firstString === target;
 }
-
 end('Bastian', 'n');
 */
 
@@ -113,6 +111,22 @@ repeat('abc', 3);
 
 //------------------------------------------------------------------------------------------------------------------------------
 //11 Bonfire: Truncate a string
+// How I Did It:
+/*
+function truncate(str, num) {
+  if (str.length <= num){
+    return str;
+  }
+  else {
+  return str.slice(0, (num - 3)) + "...";
+  }
+}
+
+truncate('A-tisket a-tasket A green and yellow basket', 11);
+*/
+
+//------------------------------------------------------------------------------------------------------------------------------
+//12 Bonfire: Chunkey Monkey
 // How I Did It:
 /*
 function truncate(str, num) {
