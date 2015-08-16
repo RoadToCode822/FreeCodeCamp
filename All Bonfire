@@ -1,0 +1,49 @@
+//------------------------------------------------------------------------------------------------------------------------------
+//9 Bonfire: Confirm the Ending
+/*
+function end(str, target) {
+  var targetLength = target.length;
+  var firstString = str.substr(-targetLength);
+  if(firstString === target){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+end('Bastian', 'n');
+*/
+
+// Simpler way of doing it:
+/*
+function end(str, target) {
+  var firstString = str.substr(-target.length);
+
+    return firstString === target;
+}
+
+end('Bastian', 'n');
+*/
+
+//------------------------------------------------------------------------------------------------------------------------------
+//10 Bonfire: Repeat a string repeat a string
+// How I Did It:
+/*
+function repeat(str, num) {
+  if (num < 0){
+    return "";
+  }
+  return str.repeat(num);
+}
+
+repeat('abc', 3);
+*/
+
+
+//------------------------------------------------------------------------------------------------------------------------------
+//11 Bonfire: Truncate a string
+// How I Did It:
+/*
+
+*/
